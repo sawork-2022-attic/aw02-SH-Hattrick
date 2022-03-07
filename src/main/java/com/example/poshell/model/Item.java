@@ -13,4 +13,6 @@ public class Item {
     public String toString(){
         return product.toString() +"\t" + amount;
     }
+
+    public String getProductName() {return product.getProductName();}
 }

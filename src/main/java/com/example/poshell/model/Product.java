@@ -15,4 +15,6 @@ public class Product {
         return getId() + "\t" + getName() + "\t" + getPrice();
     }
 
+    public String getProductName(){return name;}
+
 }

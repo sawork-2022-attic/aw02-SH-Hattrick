@@ -14,6 +14,16 @@ public class Cart {
         return items.add(item);
     }
 
+    public boolean removeItem(Item item) {
+        for(Item i:items){
+            if(i.getProductName() == item.getProductName()){
+                items.remove(i);
+                return true;
+            }
+        }
+        return true;
+    }
+
     @Override
     public String toString() {
         if (items.size() ==0){
